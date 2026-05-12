@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(255, 253, 242);
+        }
+
+        h1{
+            background-color: rgb(161, 23, 58);
+            font: bold, 20px, Times;
+            color: white;
+        }
+
+        p{
+            font: normal, 15px, Arial;
+            color: rgb(161, 23, 58);
+        }
+    </style>
+</head>
+<body>
+    <h1> Título da Página</h1>
+    
+    <br>
+
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum adipisci, aperiam quae voluptatem, sed praesentium harum nulla dicta tempora, reiciendis esse? Similique reprehenderit cum omnis? Earum odit non quos in.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio autem et dolor quidem amet iusto magni nam nesciunt eveniet dicta eligendi ut molestias, saepe doloremque aliquam? Suscipit, aut sequi.</p>
+
+    <script>
+        var confirmacao = window.confirm("Gostaria de responder um questionário?")
+        
+        if(confirmacao){
+            var pnome = String(window.prompt("Digite o seu primeiro nome:"))
+            var fnome = String(window.prompt(`Digite o seu ultimo nome, ${pnome}:`))
+
+            window.alert(`Seu nome completo é ${pnome} ${fnome}`)
+
+            document.write(`<h1>Nome: ${pnome} ${fnome}</h1>`)
+        }
+    </script>
+</body>
+</html>
