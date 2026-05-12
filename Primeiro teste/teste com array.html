@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <style>
+        body{
+            background-color: rgb(255, 253, 242);
+        }
+
+        h1{
+            background-color: rgb(161, 58, 151);
+            font: bold, 20px, Times;
+            color: white;
+        }
+
+        p{
+            font: normal, 15px, Arial;
+            color: rgb(161, 58, 151);
+        }
+    </style>
+</head>
+<body>
+    <h1> Título da Página</h1>
+    
+    <br>
+
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum adipisci, aperiam quae voluptatem, sed praesentium harum nulla dicta tempora, reiciendis esse? Similique reprehenderit cum omnis? Earum odit non quos in.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio autem et dolor quidem amet iusto magni nam nesciunt eveniet dicta eligendi ut molestias, saepe doloremque aliquam? Suscipit, aut sequi.</p>
+	
+    <script>
+        var confirmacao = window.confirm("Gostaria de responder um questionário?")
+        
+        if(confirmacao){
+            const info = {
+		nome: String(window.prompt("Digite o seu primeiro nome:")),
+		idade: String(window.prompt("Digite a sua idade:")),
+		sexo: String(window.prompt("Digite o seu sexo:"))
+	    }
+
+            	document.write(`<br><br><h1 Style="background-color: black">${info.nome}</h1>`)
+		document.write(`<p Style="color: black">Nome: ${info.nome}<br>Idade: ${info.idade}<br>Sexo: ${info.sexo}</p>`)
+        }
+    </script>
+</body>
+</html>
